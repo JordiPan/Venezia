@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+{% block title %}recepten tabel{% endblock %}
+
+{% block body %}
+    <table class="table table-dark">
+        <thead>
+        <tr>
+            <th>naam</th>
+            <th>bereidingswijze</th>
+        </tr>
+        </thead>
+        {% for recipe in recipes %}
+        <tr>
+            <th>{{ recipe.naam }}</th>
+            <th>{{ recipe.bereidingswijze }}</th>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

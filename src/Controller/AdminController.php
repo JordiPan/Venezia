@@ -6,6 +6,7 @@ use App\Entity\Fruit;
 use App\Entity\Recept;
 use App\Form\FruitFormType;
 use App\Form\ReceptFormType;
+use App\Repository\ReceptRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -62,6 +63,17 @@ class AdminController extends AbstractController
         }
         return $this->render('admin/addFruit.html.twig', [
             'form' => $form->createView(),
+        ]);
+    }
+    /**
+     * @Route("/recipes", name="recipe_table")
+     */
+    public function showRecipeTable()
+    {
+        $r = $this->getDoctrine()->getRepository(Recept::class);
+        $recipes = $r->findAll();
+        return $this->render('admin/recipeTable.html.twig', [
+            "recipes" => $recipes
         ]);
     }
 }
