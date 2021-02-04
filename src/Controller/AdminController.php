@@ -66,7 +66,7 @@ class AdminController extends AbstractController
         ]);
     }
     /**
-     * @Route("/recipes", name="recipe_table")
+     * @Route("/admin/recipes", name="recipe_table")
      */
     public function showRecipeTable()
     {
@@ -77,3 +77,27 @@ class AdminController extends AbstractController
         ]);
     }
 }
+
+
+
+/*
+ *
+fruit
+ 'abrikoos', 'zomer'
+ 'banaan', 'jaar'
+ 'citroen', 'jaar'
+ 'appel', 'herfst'
+ 'druif', 'herfst'
+ 'kruisbes', 'herfst'
+ 'braam', 'zomer'
+
+recepten
+appeltaartijs', 'gooi room bij appel, kers en melk, kook het mengsel en voeg 1 kilo suiker toe. Laat afkoelen bij kamertemperatuur.', '18.00'
+ 'chocomousseijs', 'Smelt 400 g melkchocolade au bain marie, klop 500 g slagroom op. Meng een ei door de chocolade en schep die door de slagroom. Laat de chocomousse al draaiend opstijven en zet daarna in de koelkast. Max 4 graden celsius afkoelen.', '12.00'
+drakenfruitijs', 'Schep het drakenfruit leeg. Maak een halve liter slagroom. Schep het fruit door de slagroom. Koel het mensgel', '14.00'
+blauwebessenijs', 'Kook de blauwe bessen (1000 g). Kook boerenmelk en laat afkoelen. Sla room tot punten. Meng door de afgekoelde melk. Meng de blauwe bessen door de melk. Laat alles afkoelen.', '15.00'
+ 'citroenijs', 'Rasp citroenschil. Kook de schil en laat afkoelen. Pers 4 citroenen uit. Meng het sap met 250 g suiker. Klop een halve liter slagroom op. Schep dat door het citroensap. Voeg een halve liter sojamelk toe. Laat het mengsel langzaam afkoelen.', '9.00'
+kruisbessenijs', '2 kilo kruisbessen verpulveren. Mengen met sorbetijs en door de mascarpone scheppen.', '45.50'
+bramenijs', 'Kook de bramen stuk. Voeg 1:1 suiker toe en 1:2 room. Kook de room in, voeg 100 g pure chocolade toe en laat het mengsel afkoelen. Schep slagroom door het mengsel.', '16.50'
+
+ */

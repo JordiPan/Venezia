@@ -20,13 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f0c8541-3a72-462c-86ad-d7c658e65ab0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pictures/venezia2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/recipeTable.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pictures/aardbeienijs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pictures/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pictures/twitter.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210201115701.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210203223956.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ReceptFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ReceptFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pictures/venezia2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/pictures/venezia2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/recipeTable.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/recipeTable.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,6 +165,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Healththree" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -171,10 +174,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Student.DESKTOP-NLE9OIH\PhpstormProjects\Venezia\public\pictures" />
+      <recent name="C:\Users\Student.DESKTOP-NLE9OIH\PhpstormProjects\Venezia\public" />
       <recent name="C:\xampp\htdocs\Venezia\src" />
       <recent name="C:\xampp\htdocs\Venezia\templates\pictures" />
       <recent name="C:\xampp\htdocs\Venezia\templates\admin" />
-      <recent name="C:\xampp\htdocs\Venezia\templates" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -190,6 +194,7 @@
       <workItem from="1612182015472" duration="1063000" />
       <workItem from="1612388459086" duration="1303000" />
       <workItem from="1612389783880" duration="6133000" />
+      <workItem from="1611831767829" duration="5696000" />
     </task>
     <servers />
   </component>
@@ -206,6 +211,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1612394158551">

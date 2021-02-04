@@ -19,7 +19,8 @@ class ReceptFormType extends AbstractType
             ->add('bereidingswijze')
             ->add('fruit', EntityType::class,[
                 'class'=>Fruit::class,
-                'choice_label'=>'naam'
+                'choice_label'=>'naam',
+                'required' => false
             ])
         ;
     }
