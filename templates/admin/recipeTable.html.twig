@@ -13,7 +13,7 @@
         </thead>
         {% for recipe in recipes %}
         <tr>
-            <th><img src="{{ asset( 'fruit/' ~ recipe.fruit.naam ~ '.jpg') }}" alt=""></th>
+            <th><img src="{{ asset( 'pictures/fruit/' ~ recipe.fruit.naam ~ '.jpg') }}" alt="" class="img-fluid"></th>
             <th>{{ recipe.naam }}</th>
             <th>{{ recipe.bereidingswijze }}</th>
         </tr>
