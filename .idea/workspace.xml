@@ -19,7 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f0c8541-3a72-462c-86ad-d7c658e65ab0" name="Default Changelist" comment="" />
+    <list default="true" id="8f0c8541-3a72-462c-86ad-d7c658e65ab0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/admin/form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/fruitTable.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/addFruit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/addRecept.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/recipeTable.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/recipeTable.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,7 +165,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Healththree" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -181,6 +191,7 @@
       <workItem from="1612182015472" duration="1063000" />
       <workItem from="1612388459086" duration="1303000" />
       <workItem from="1612389783880" duration="6187000" />
+      <workItem from="1612736620738" duration="1126000" />
     </task>
     <servers />
   </component>
@@ -197,15 +208,20 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1612394158551">
+    <state x="977" y="374" key="FileChooserDialogImpl" timestamp="1612736609200">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1612394158551" />
+    <state x="977" y="374" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1612736609200" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1612389767109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1612389767109" />
+    <state x="1103" y="230" key="search.everywhere.popup" timestamp="1612737373873">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1103" y="230" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612737373873" />
   </component>
 </project>

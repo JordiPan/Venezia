@@ -13,11 +13,15 @@
         </thead>
         {% for recipe in recipes %}
         <tr>
-            <th><img src="{{ asset( 'pictures/fruit/' ~ recipe.fruit.naam ~ '.jpg') }}" alt="" class="img-fluid"></th>
-            <th>{{ recipe.naam }}</th>
-            <th>{{ recipe.bereidingswijze }}</th>
+            <td><img src="{{ asset( 'pictures/recepten/' ~ recipe.naam ~ '.jpg') }}" alt="" class="img-fluid" style="
+border-radius: 100%;
+width: 5em;
+height: 5em;
+"></td>
+            <td>{{ recipe.naam }}</td>
+            <td>{{ recipe.bereidingswijze }}</td>
         </tr>
-
         {% endfor %}
     </table>
+    <a href="{{ path('add_recipe') }}" class="btn btn-success">toevoegen</a>
 {% endblock %}

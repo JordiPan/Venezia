@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h1 class="text-center">
+        {% if action != 'aanpassen' %}
+        {{ action }} {{ thing }}
+        {% else %}
+        {{ thing }} {{ action }}
+        {% endif %}
+    </h1>
+    <div class="container">
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <button type="submit" class="btn btn-success">Sla op!</button>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}

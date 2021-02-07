@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+{% block title %}Fruit tabel{% endblock %}
+
+{% block body %}
+    <h1 class="text-center">Fruit tabel</h1>
+    <table class="table table-dark table-bordered">
+        <thead>
+        <tr>
+            <th></th>
+            <th>naam</th>
+            <th>seizoen</th>
+            <th>aanpassen</th>
+            <th>verwijderen</th>
+        </tr>
+        </thead>
+        {% for fruit in fruit %}
+            <tr>
+                <td><img src="{{ asset( 'pictures/fruit/' ~ fruit.naam ~ '.jpg') }}" alt='plaatje van fruit niet gevonden' class="img img-fluid" style="
+border-radius: 100%;
+width: 5em;
+height: 5em;
+">
+                </td>
+                <td>{{ fruit.naam }}</td>
+                <td>{{ fruit.seizoen }}</td>
+                <td><a href="{{ path('edit_fruit', {'id': fruit.id}) }}" class="btn btn-primary">aanpassen</a></td>
+                <td><a href="{{ path('delete_fruit', {'id': fruit.id}) }}" class="btn btn-danger">verwijderen</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+    <a href="{{ path('add_fruit') }}" class="btn btn-success">toevoegen</a>
+{% endblock %}

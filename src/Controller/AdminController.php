@@ -26,7 +26,7 @@ class AdminController extends AbstractController
     }
 
     /**
-     * @Route("/admin/add/recept", name="add_recept")
+     * @Route("/admin/add/recept", name="add_recipe")
      */
     public function addRecept(Request $request)
     {
@@ -41,8 +41,10 @@ class AdminController extends AbstractController
             $this->addFlash('success', 'Recept is toegevoegd!');
             return $this->redirectToRoute('admin');
         }
-        return $this->render('admin/addRecept.html.twig', [
+        return $this->render('admin/form.html.twig', [
             'form' => $form->createView(),
+            'action' => 'Maak',
+            'thing' => 'recept'
         ]);
     }
     /**
@@ -59,11 +61,45 @@ class AdminController extends AbstractController
             $entityManager->persist($fruit);
             $entityManager->flush();
             $this->addFlash('success', 'Fruit is toegevoegd!');
-            return $this->redirectToRoute('admin');
+            return $this->redirectToRoute('fruit_table');
         }
-        return $this->render('admin/addFruit.html.twig', [
+        return $this->render('admin/form.html.twig', [
             'form' => $form->createView(),
+            'action' => 'Maak',
+            'thing' => 'fruit'
         ]);
+    }
+    /**
+     * @Route("/admin/edit/fruit/{id}", name="edit_fruit")
+     */
+    public function editFruit(Request $request, $id) {
+        $fruit = $this->getDoctrine()->getRepository(Fruit::class)->find($id);
+        $form = $this->createForm(FruitFormType::class, $fruit);
+
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($fruit);
+            $entityManager->flush();
+            $this->addFlash('success', 'Fruit is aangepast!');
+            return $this->redirectToRoute('fruit_table');
+        }
+        return $this->render('admin/form.html.twig', [
+            'form' => $form->createView(),
+            'action' => 'aanpassen',
+            'thing' => 'Fruit'
+        ]);
+    }
+    /**
+     * @Route("/admin/delete/fruit/{id}", name="delete_fruit")
+     */
+    public function deleteFruit($id) {
+        $em = $this->getDoctrine()->getManager();
+        $fruit = $this->getDoctrine()->getRepository(Fruit::class)->find($id);
+        $em->remove($fruit);
+        $em->flush();
+            $this->addFlash('success', 'Fruit is verwijdert!');
+            return $this->redirectToRoute('fruit_table');
     }
     /**
      * @Route("/admin/recipes", name="recipe_table")
@@ -74,6 +110,17 @@ class AdminController extends AbstractController
         $recipes = $r->findAll();
         return $this->render('admin/recipeTable.html.twig', [
             "recipes" => $recipes
+        ]);
+    }
+    /**
+     * @Route("/admin/fruit", name="fruit_table")
+     */
+    public function showFruitTable()
+    {
+        $r = $this->getDoctrine()->getRepository(Fruit::class);
+        $fruit = $r->findAll();
+        return $this->render('admin/fruitTable.html.twig', [
+            "fruit" => $fruit
         ]);
     }
 }
