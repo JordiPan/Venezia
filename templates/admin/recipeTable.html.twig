@@ -2,18 +2,22 @@
 {% block title %}recepten tabel{% endblock %}
 
 {% block body %}
-    <table class="table table-dark">
+    <h1 class="text-center">Recepten tabel</h1>
+    <table class="table table-dark table-bordered">
         <thead>
         <tr>
+            <th></th>
             <th>naam</th>
             <th>bereidingswijze</th>
         </tr>
         </thead>
         {% for recipe in recipes %}
         <tr>
+            <th><img src="{{ asset( 'pictures/fruit/' ~ recipe.fruit.naam ~ '.jpg') }}" alt="" class="img-fluid"></th>
             <th>{{ recipe.naam }}</th>
             <th>{{ recipe.bereidingswijze }}</th>
         </tr>
+
         {% endfor %}
     </table>
 {% endblock %}
